@@ -1,0 +1,17 @@
+[package]
+name = "kkx_mc"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.0.0-beta"
+sqlx = { version = "0.5", features = [ "runtime-actix-native-tls", "postgres", "uuid" ] }
+serde = { version = "1", features = [ "derive" ] }
+dotenv = "0.15"
+uuid = "0.8"
+argon2 = "0.2"
+rand_core = { version = "0.6", features = ["std"] }
+thiserror = "1"
+serde_json = "1"
