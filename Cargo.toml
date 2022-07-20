@@ -1,0 +1,9 @@
+[workspace]
+members = [
+	"crates/mcl-core"
+]
+
+[profile.release]
+lto = true
+panic = "abort"
+codegen-units = 1
